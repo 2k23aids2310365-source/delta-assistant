@@ -29,8 +29,8 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s: %(mes
 MEMORY_FILE = os.environ.get("DELTA_MEMORY_FILE", "delta_memory.json")
 NEWS_API_KEY = os.environ.get("DELTA_NEWS_API_KEY", "0530443142104c65965ccb122f9395a4")      # optional
 WEATHER_API_KEY = os.environ.get("DELTA_WEATHER_API_KEY", "a201655e97c349c993883936250411")# optional (WeatherAPI)
-EMAIL_SENDER = os.environ.get("DELTA_EMAIL_SENDER", "prakharssa@gmail.com")      # optional
-EMAIL_PASSWORD = os.environ.get("DELTA_EMAIL_PASSWORD", "22072004ps@")  # optional
+EMAIL_SENDER = os.environ.get("DELTA_EMAIL_SENDER", "")      # optional
+EMAIL_PASSWORD = os.environ.get("DELTA_EMAIL_PASSWORD", "")  # optional
 
 if not NEWS_API_KEY:
     logging.warning("DELTA_NEWS_API_KEY not set — news feature disabled until configured.")
